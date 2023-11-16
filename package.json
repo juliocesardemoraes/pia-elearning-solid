@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "solid-js": "^1.7.8"
+    "solid-js": "^1.7.8",
+    "solid-start-vercel": "^0.1.0-alpha.100"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
