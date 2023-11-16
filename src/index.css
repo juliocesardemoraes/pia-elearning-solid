@@ -1,69 +1,275 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-align: left;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background: #242225;
+  color: #fff;
+  padding: 2rem 4rem 0 4rem;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 48px;
+  font-weight: 900;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+h2 {
+  font-size: 38px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+h3 {
+  font-size: 31px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p,
+label {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.small {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.login__form {
+  background: #1e1e1e;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+  max-width: 400px;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
+.flex__between {
+  justify-content: space-between;
+}
+
+.flex__justify__center {
+  justify-content: center;
+}
+
+.flex__align__center {
+  align-items: center;
+}
+
+.input__new {
+  all: unset;
+  font-size: 18px;
+}
+
+.button {
+  all: unset;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.25rem 0;
+  width: 15rem;
+  opacity: 0.9;
+}
+
+.primary {
+  background: #5482cf;
+}
+
+.secundary {
+  border: 1px solid #5482cf;
+  transition: 1s background;
+}
+
+.danger {
+  background: #eb5a40;
+}
+
+.secundary:hover {
+  background: #5482cf;
+  transition: 1s background;
+}
+
+.button__anchor {
+  max-width: 15rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
+
+.g__1 {
+  gap: 1rem;
+}
+
+a {
+  all: unset;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.login__form a {
+  max-width: 15rem;
+}
+
+.br-1 {
+  border-radius: 1rem;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+.input__big {
+  font-size: 48px !important;
+}
+
+.bigText {
+  font-size: 24px;
+}
+
+.wrap {
+  text-wrap: wrap;
+  width: 50%;
+}
+
+.w__50 {
+  width: 50%;
+}
+
+.w__75 {
+  width: 75% !important;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+hr {
+  margin-top: 0.5rem;
+  border: 1px solid #fff;
+}
+
+.quiz {
+  background: #fff;
+  border-radius: 1rem;
+  color: #222;
+  padding: 1rem;
+  width: 300px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.flex__adaptative {
+  display: flex;
+}
+
+.w__50__responsive {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    font-size: 14px;
   }
-  a:hover {
-    color: #747bff;
+  .w__50__responsive {
+    width: 80vw;
   }
-  button {
-    background-color: #f9f9f9;
+  .flex__adaptative {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 0.5rem 1rem;
   }
 }
