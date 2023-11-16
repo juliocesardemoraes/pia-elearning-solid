@@ -1,24 +1,19 @@
 {
-  "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start"
-  },
-  "type": "module",
+  "name": "my-app",
   "private": true,
-  "devDependencies": {
-    "solid-start-vercel": "^0.2.26",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.8"
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.28.5",
-    "@solidjs/router": "^0.8.2",
-    "solid-js": "^1.7.5",
-    "solid-start": "^0.2.26",
-    "undici": "^5.22.1"
+    "solid-js": "^1.7.8"
   },
-  "engines": {
-    "node": "18.x"
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-solid": "^2.7.0"
   }
 }
