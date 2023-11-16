@@ -1,7 +1,7 @@
 export async function getUserInfo() {
   try {
     const response = await fetch(
-      `${import.meta.env.VITE_PUBLIC_BACKEND_PROD}/users/profile`,
+      `${import.meta.env.VITE_PUBLIC_BACKEND}/users/profile`,
       {
         method: "GET",
         credentials: "include",
