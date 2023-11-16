@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "solid-js": "^1.7.8",
-    "solid-start-vercel": "^0.1.0-alpha.100"
+    "solid-start-vercel": "^0.3.10"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
